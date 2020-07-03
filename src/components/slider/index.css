@@ -1,0 +1,9 @@
+.carousel-item > img {
+    width: 100%;
+    height: 630px;
+}
+.carousel-caption {
+    margin-bottom: 200px;
+    font-size: 8rem;
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+.place__container {
+    height: 2000px;
+    font-size: 1.6rem;
+}
+
+.place__container > .container > .row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.place__container > .container > .row:hover {
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+.place__container > .container > .col {
+    width: 100%;
+}
+.container {
+    height: 100%;
+}
+.place__container > .container > .row > .col:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place__container > .container > .row > .col:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place__container > .container > .row > .col:nth-child(2) > .place__video {
+    width: 80% !important;
+    height: 80% !important;
+}
+.place__container > .container > .row:first-child {
+    height: 20%;
+}
+.place__container > .container > .row:nth-child(2) {
+    height: 20%;
+}
+.place__container > .container > .row:nth-child(3) {
+    height: 20%;
+}
+.place__container > .container > .row:last-child {
+    height: 20%;
+}

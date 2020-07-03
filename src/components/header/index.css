@@ -1,0 +1,114 @@
+.header__navbar {
+    height: 95px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+.header__navbar > .container {
+    height: 95px;
+}
+
+.header__navbar > .container > .row {
+    height: 95px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.header__top__list-item-icon {
+    margin-right: 10px;
+}
+.logo {
+    height: 50px;
+}
+.header__list {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+    font-size: 1.6rem;
+    list-style-type: none;
+}
+.header__list-item {
+    position: relative;
+}
+.header__list-item::before {
+    content: "";
+    bottom: 0%;
+    width: 50%;
+
+    display: none;
+    height: 2px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(161, 165, 167, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    position: absolute;
+}
+.header__list-item:hover::before {
+    display: block;
+    animation: ex 0.2s;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+.link:hover {
+    text-decoration: none;
+}
+@keyframes ex {
+    0% {
+        right: 100%;
+    }
+    20% {
+        right: 90%;
+    }
+    40% {
+        right: 80%;
+    }
+    60% {
+        right: 70%;
+    }
+    80% {
+        right: 60%;
+    }
+    100% {
+        right: 50%;
+    }
+}
+.header__list-dichvu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    margin-top: 5px;
+    color: var(--text-color);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+    background-color: var(--white-color);
+}
+.header__list-item:hover {
+    color: #5da9ea;
+    cursor: pointer;
+}
+.header__list-item:hover .header__list-dichvu {
+    display: block;
+}
+
+@media (max-width: 575.98px) {
+    .header__list-item {
+        color: rebeccapurple;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header__list-item {
+        color: red;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header__list-item {
+        color: yellow;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header__list-item {
+        color: greenyellow;
+    }
+}
